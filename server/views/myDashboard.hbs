@@ -1,0 +1,41 @@
+
+<!-- body for layout -->
+<section id="mainDashboardContainer">
+
+  <!--user profile-->
+  {{> dashboard_left }}
+
+  <!-- right container with all the projects -->
+  {{> dashboard_main_list }}
+
+
+</section>
+
+<!-- ADD ANTOHER PROJECT -->
+<div id="addProjectBox" class="jumbotron">
+
+  <p>Wanna add more projects?</p>
+  <button class="btn btn-primary btn-lg" id="addButton"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Project</button>
+
+</div>
+
+<div class="animatedBackground">
+  <br>
+</div>
+
+<div id="makePortfolioBox" class="jumbotron">
+
+  <p>Remove from Public View</p>
+  <button type="submit" class="btn btn-danger btn-lg" id="makeProject"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> DELETE</button>
+
+</div>
+
+
+<!--edit modal-->
+{{> dashboard_edit_modal }}
+
+<!--ALERT: PROFILE PHOTO CHANGE COMPLETE ALERT!-->
+{{> photo_upload_alert}}
+
+<!--LOADING CIRCLE-->
+{{> loading_circle }}
